@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zoaya's Cat Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: white;   /* clean background */
+            color: black;              /* text color */
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        figure {
+            text-align: center;
+        }
+        .gallery img {
+            max-width: 250px;
+            border-radius: 10px;
+            border: 2px solid #ccc;    /* thin border */
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);    /* zoom effect */
+        }
+        figcaption {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;               /* softer caption color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello from the Zoaya's Cat Gallery!</h1>
+    <p>This site was deployed using Python and Boto3.</p>
+
+    <div class="gallery">
+        <figure>
+            <img src="100.jpg" alt="Cat 100">
+            <figcaption>Cat 100</figcaption>
+        </figure>
+        <figure>
+            <img src="200.jpg" alt="Cat 200">
+            <figcaption>Cat 200</figcaption>
+        </figure>
+        <figure>
+            <img src="201.jpg" alt="Cat 201">
+            <figcaption>Cat 201</figcaption>
+        </figure>
+        <figure>
+            <img src="202.jpg" alt="Cat 202">
+            <figcaption>Cat 202</figcaption>
+        </figure>
+    </div>
+</body>
+</html>
